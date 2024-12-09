@@ -1,0 +1,6 @@
+.ditails{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin: 50px 0;
+}

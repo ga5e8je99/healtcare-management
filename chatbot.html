@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    background-color: #0077b6;
+    color: white;
+    padding: 20px 0;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.chat-window {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 2px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.chat-message {
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.chat-message.bot {
+    background-color: #dceefb;
+    align-self: flex-start;
+}
+
+.chat-message.user {
+    background-color: #caf0f8;
+    align-self: flex-end;
+}
+
+.chat-footer {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.chat-footer input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.chat-footer button {
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-footer button:hover {
+    background-color: #005f87;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+}
+
+</style>
+<body>
+    <header class="header">
+        <h1>Healthcare Chatbot</h1>
+        <p>Your virtual health assistant</p>
+    </header>
+    <main class="chat-container">
+        <div class="chat-window">
+            <div class="chat-header">
+                <h2>Ask HealthBot</h2>
+            </div>
+            <div class="chat-body">
+                <div class="chat-message bot">
+                    Hello! I’m your healthcare assistant. How can I help you today?
+                </div>
+                <!-- Add user and bot messages dynamically -->
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="user-input" placeholder="Type your message here..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Healthcare Chatbot | All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

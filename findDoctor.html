@@ -1,0 +1,663 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>CAIRO CARE - Free Medical and Doctor Directory HTML Template.</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="img/favicon.png">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="css/icofont.css">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="css/slicknav.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="css/owl-carousel.css">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="css/datepicker.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+		<style>
+            .search-bar {
+                background-color: #f4f4f4;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+    
+            .search-bar input,
+            .search-bar select,
+            .search-bar button {
+                padding: 10px;
+                margin: 0px !important;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                height: 50px;
+            }
+            #search-form{
+                display: grid;
+                    align-items: center;
+                    grid-template-columns: 60% auto auto auto;
+                    
+                    padding: 20px 50px;
+                    grid-gap: 20px;
+            }
+            .search-bar button {
+                background-color: #567daa;
+                color: white;
+                cursor: pointer;
+            }
+    
+            .search-bar button:hover {
+                background-color: #567daa;
+            }
+    
+            .doctors-section {
+                padding: 20px;
+            }
+    
+            .doctors-section h2 {
+                text-align: center;
+                color: #567daa;
+            }
+    
+            .doctors-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+    
+            .doctor-card {
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                width: 300px;
+                padding: 15px;
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
+    
+            .doctor-card img {
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+    
+            .doctor-card h3 {
+                margin: 10px 0;
+                color: #567daa;
+            }
+    
+            .doctor-card p {
+                margin: 5px 0;
+            }
+    
+            .doctor-card:hover {
+                transform: translateY(-5px);
+            }
+            .nice-select{
+                margin: 0 !important;
+            }
+            .card img{
+                width: 100%;
+                height: 200px;
+                object-fit: contain;
+                
+            }
+        </style>
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		
+		<!-- Get Pro Button -->
+		<ul class="pro-features">
+			<a class="get-pro" href="#">Get Pro</a>
+			<li class="big-title">Pro Version Available on Themeforest</li>
+			<li class="title">Pro Version Features</li>
+			<li>2+ premade home pages</li>
+			<li>20+ html pages</li>
+			<li>Color Plate With 12+ Colors</li>
+			<li>Sticky Header / Sticky Filters</li>
+			<li>Working Contact Form With Google Map</li>
+			<div class="button">
+				<a href="http://preview.themeforest.net/item/CAIRO CARE-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Pro Version Demo</a>
+				<a href="https://themeforest.net/item/CAIRO CARE-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Buy Pro Version</a>
+			</div>
+		</ul>
+	
+		<!-- Header Area -->
+		<header class="header" >
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-5 col-12">
+							<!-- Contact -->
+							<ul class="top-link">
+								<li><a href="#">About</a></li>
+								<li><a href="#">Doctors</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+							<!-- End Contact -->
+						</div>
+						<div class="col-lg-6 col-md-7 col-12">
+							<!-- Top Contact -->
+							<ul class="top-contact">
+								<li><i class="fa fa-phone"></i>+880 1234 56789</li>
+								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
+							</ul>
+							<!-- End Top Contact -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar -->
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="index.html"><img src="img/logo (1).png" alt="#" width="130px"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-7 col-md-9 col-12">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li class="active"><a href="#">Home  </a>
+												<ul class="dropdown">
+													<li><a href="index.html">Home Page 1</a></li>
+												</ul>
+											</li>
+											 <li ><a href="findDoctor.html">Doctors </a></li>
+											<li><a href="#">Services </a></li>
+											 
+											<li><a href="blog-single.html">Blogs  </a>
+												
+											</li>
+											<li><a href="contact.html">Contact Us</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							<div class="col-lg-2 col-12">
+								<div class="get-quote">
+									<a href="appointment.html" class="btn">Chat AI</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+	
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs overlay">
+			<div class="container">
+				<div class="bread-inner">
+					<div class="row">
+						<div class="col-12">
+							<h2>Doctors</h2>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Breadcrumbs -->
+        <section class="search-bar">
+            <form id="search-form" >
+                <input type="text" id="name-filter" placeholder="Doctor's Name" style="height: 100%">
+               
+                <select id="specialization-filter">
+                    <option value="">Select Specialization</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Dermatology">Dermatology</option>
+                    <option value="Neurology">Neurology</option>
+                    <option value="Orthopedics">Orthopedics</option>
+                    <option value="Pediatrics">Pediatrics</option>
+                </select>
+    
+                <!-- Location Dropdown -->
+                <select id="country-filter">
+                    <option value="">Select Location</option>
+                    <option value="Cairo">Cairo</option>
+                    <option value="Giza">Giza</option>
+                    <option value="Alexandria">Alexandria</option>
+                    <option value="Ismailia">Ismailia</option>
+                </select>
+    
+                <button type="button" id="search-btn">Search</button>
+            </form>
+        </section>
+        <section class="doctors-section">
+            <h2 style="    margin: 40px 0;">Available Doctors</h2>
+            <div class="doctors-container" id="doctors-container">
+                
+                <!-- Doctor Card 1 -->
+<div class="doctor-card" data-price="EP 200" data-address="Nile Healthcare Clinic, 45 Nile Street, Building No. 10, Apartment 8 - Cairo"data-name="Ali Ahmed" data-location="Cairo" data-specialization="Orthopedics" >
+    <img src="https://kneetech.co.uk/wp-content/uploads/2020/10/cache_33063801.jpg" alt="Doctor Image">
+    <h3>Dr. Ali Ahmed</h3>
+    <p><strong>Specialization:</strong> Orthopedics</p>
+    <p><strong>Location:</strong> Cairo</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 100-123-4567</span></p>
+</div>
+
+<!-- Doctor Card 2 -->
+<div class="doctor-card" data-price="EP 250"  data-address="Pyramid Medical Center, 123 Pyramids Street, Building No. 5, Apartment 12 - Giza" data-name="Sara Hassan" data-location="Giza" data-specialization="Neurology">
+    <img src="https://mcpress.mayoclinic.org/wp-content/uploads/2022/06/HassanSara.jpg" alt="Doctor Image">
+    <h3>Dr. Sara Hassan</h3>
+    <p><strong>Specialization:</strong> Neurology</p>
+    <p><strong>Location:</strong> Giza</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 101-234-5678</span></p>
+</div>
+
+<!-- Doctor Card 3 -->
+<div class="doctor-card" data-price="250EP "  data-address="Sunrise Pediatrics Clinic, 78 Corniche Street, Building No. 20, Apartment 4 - Alexandria" data-name="Omar Youssef" data-location="Alexandria" data-specialization="Dermatology">
+    <img src="https://wmed.edu/sites/default/files/frfphotos/RA120827.jpg" alt="Doctor Image">
+    <h3>Dr. Omar Youssef</h3>
+    <p><strong>Specialization:</strong> Dermatology</p>
+    <p><strong>Location:</strong> Alexandria</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 102-345-6789</span></p>
+</div>
+
+<!-- Doctor Card 4 -->
+<div class="doctor-card" data-price="EP 300"  data-address="Future Cardiology Clinic, 56 Suez Street, Building No. 22, Apartment 7 - Ismailia" data-name="Layla Mohamed" data-location="Ismailia" data-specialization="Cardiology">
+    <img src="https://anavara.com/wp-content/uploads/2021/10/DR-LAYLA-AL-MARZOOQI.jpg" alt="Doctor Image">
+    <h3>Dr. Layla Mohamed</h3>
+    <p><strong>Specialization:</strong> Cardiology</p>
+    <p><strong>Location:</strong> Ismailia</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 103-456-7890</span></p>
+</div>
+<!-- Doctor Card 5 -->
+<div class="doctor-card" data-price="EP 200"  data-address="Elite Orthopedic Center, 34 Rehab Street, Building No. 15, Apartment 3 - Cairo" data-name="Hala Saeed" data-location="Cairo" data-specialization="Pediatrics">
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQFYhWErniWrPQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1638817822996?e=2147483647&v=beta&t=ohn4nqgUqiy0jx9g21V7OljQ-u7NtEjGP29JCx9m4dQ" alt="Doctor Image">
+    <h3>Dr. Hala Saeed</h3>
+    <p><strong>Specialization:</strong> Pediatrics</p>
+    <p><strong>Location:</strong> Cairo</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 104-567-8901</span></p>
+</div>
+
+<!-- Doctor Card 6 -->
+<div class="doctor-card" data-price="EP 150"  data-address="Smile Dental Clinic, 89 King Street, Building No. 8, Apartment 11 - Alexandria" data-name="Khaled Nabil" data-location="Alexandria" data-specialization="Cardiology">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzSBhKtozx2LKOUPm5COfKNVpTIEn9O00QGg&s" alt="Doctor Image">
+    <h3>Dr. Khaled Nabil</h3>
+    <p><strong>Specialization:</strong> Cardiology</p>
+    <p><strong>Location:</strong> Alexandria</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 105-678-9012</span></p>
+</div>
+
+<!-- Doctor Card 7 -->
+<div class="doctor-card" data-price="EP 175"  data-address="Health First Neurology Clinic, 12 El Mansoura Street, Building No. 14, Apartment 9 - Giza" data-name="Mona Elsharkawy" data-location="Giza" data-specialization="Dermatology">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE4qWXvl4H5laFo5GeBAEmzeME4hadtGr6Eg&s" alt="Doctor Image">
+    <h3>Dr. Mona Elsharkawy</h3>
+    <p><strong>Specialization:</strong> Dermatology</p>
+    <p><strong>Location:</strong> Giza</p>
+    <p><strong>Phone:</strong> +20 106-789-0123</p>
+</div>
+
+<!-- Doctor Card 8 -->
+<div class="doctor-card" data-price="EP 175"  data-address="New Horizon Pediatrics Clinic, 22 Horizon Street, Building No. 25, Apartment 14 - Ismailia" data-name="Adel Hossam" data-location="Ismailia" data-specialization="Neurology">
+    <img src="https://www.siumed.org/sites/default/files/styles/square_540/public/2021-11/AbdelSalem_Hossam.jpg?h=0da0137e&itok=xXmMVdCX" alt="Doctor Image">
+    <h3>Dr. Adel Hossam</h3>
+    <p><strong>Specialization:</strong> Neurology</p>
+    <p><strong>Location:</strong> Ismailia</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 107-890-1234</span></p>
+</div>
+
+<!-- Doctor Card 9 -->
+<div class="doctor-card" data-price="EP 180"  data-address="Clear Vision Ophthalmology Center, 100 Vision Street, Building No. 30, Apartment 5 - Cairo" data-name="Reem Gaber" data-location="Cairo" data-specialization="Orthopedics">
+    <img src="https://saudigermanhealth.com/sites/default/files/styles/large/public/2021-02/Rabab%20Wagdy-100.jpg?itok=1017mlqX" alt="Doctor Image">
+    <h3>Dr. Reem Gaber</h3>
+    <p><strong>Specialization:</strong> Orthopedics</p>
+    <p><strong>Location:</strong> Cairo</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 108-901-2345</span></p>
+</div>
+
+<!-- Doctor Card 10 -->
+<div class="doctor-card" data-price="EP 150"  data-address="Dermacare Specialists, 54 Dermatology Street, Building No. 18, Apartment 6 - Alexandria" data-name="Ahmed Talaat" data-location="Alexandria" data-specialization="Pediatrics">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkHTnNWq3b-H7yqTGNbpyKdvENz0gcgu_03w&s" alt="Doctor Image">
+    <h3>Dr. Ahmed Talaat</h3>
+    <p><strong>Specialization:</strong> Pediatrics</p>
+    <p><strong>Location:</strong> Alexandria</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 109-012-3456</span></p>
+</div>
+
+<!-- Doctor Card 11 -->
+<div class="doctor-card" data-price="EP 190"  data-address="Total Health Care Center, 44 Main Street, Building No. 12, Apartment 10 - Giza" data-name="Noha Mansour" data-location="Giza" data-specialization="Cardiology">
+    <img src="https://ibnnafees.com/wp-content/uploads/2021/12/Noha.jpg" alt="Doctor Image">
+    <h3>Dr. Noha Mansour</h3>
+    <p><strong>Specialization:</strong> Cardiology</p>
+    <p><strong>Location:</strong> Giza</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 110-123-4567</span></p>
+</div>
+
+<!-- Doctor Card 12 -->
+<div class="doctor-card" data-price="EP 190"  data-address="The Healing Touch Clinic, 11 Touch Street, Building No. 12, Apartment 6 - Ismailia" data-name="Yousef Samir" data-location="Ismailia" data-specialization="Dermatology">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Doctor_Yousef.jpg" alt="Doctor Image">
+    <h3>Dr. Yousef Samir</h3>
+    <p><strong>Specialization:</strong> Dermatology</p>
+    <p><strong>Location:</strong> Ismailia</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 111-234-5678</span></p>
+</div>
+<!-- Doctor Card 13 -->
+<div class="doctor-card" data-price="EP 200"  data-address="Cairo Family Health Clinic, 66 Family Street, Building No. 7, Apartment 2 - Cairo" data-name="Fatima Ali" data-location="Cairo" data-specialization="Ophthalmology">
+    <img src="data:image/jpeg;base64,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" alt="Doctor Image">
+    <h3>Dr. Fatima Ali</h3>
+    <p><strong>Specialization:</strong> Ophthalmology</p>
+    <p><strong>Location:</strong> Cairo</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 112-345-6789</span></p>
+</div>
+
+<!-- Doctor Card 14 -->
+<div class="doctor-card" data-price="EP 400"  data-address="Elite Dermatology Clinic, 77 Skin Street, Building No. 5, Apartment 13 - Alexandria" data-name="Tamer Khalil" data-location="Alexandria" data-specialization="General Surgery">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE8z0cFbGRjAd6LJc55d6Sd1coPnXO8fVjmQ&s" alt="Doctor Image">
+    <h3>Dr. Tamer Khalil</h3>
+    <p><strong>Specialization:</strong> General Surgery</p>
+    <p><strong>Location:</strong> Alexandria</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 113-456-7890</span></p>
+</div>
+
+<!-- Doctor Card 15 -->
+<div class="doctor-card" data-price="EP 300"  data-address="Wellness Orthopedics Clinic, 90 Wellness Street, Building No. 10, Apartment 4 - Giza" data-name="Heba Fathy" data-location="Giza" data-specialization="Gynecology">
+    <img src="https://nasaaem.com/storage/doctors/December2022/TMY6NKLSMoJlldMxRNU3.png" alt="Doctor Image">
+    <h3>Dr. Heba Fathy</h3>
+    <p><strong>Specialization:</strong> Gynecology</p>
+    <p><strong>Location:</strong> Giza</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 114-567-8901</span></p>
+</div>
+
+<!-- Doctor Card 16 -->
+<div class="doctor-card" data-price="EP 200"  data-address="Vital Care Hospital, 123 Vital Street, Building No. 40, Apartment 15 - Ismailia" data-name="Karim Shoukry" data-location="Ismailia" data-specialization="Psychiatry">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnfuKSn_H5BHsJXCTvJD3fpAUVtmDX0U68A&s" alt="Doctor Image">
+    <h3>Dr. Karim Shoukry</h3>
+    <p><strong>Specialization:</strong> Psychiatry</p>
+    <p><strong>Location:</strong> Ismailia</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 115-678-9012</span></p>
+</div>
+
+<!-- Doctor Card 17 -->
+<div class="doctor-card" data-price="EP 150"  data-address="Heartbeat Cardiology Center, 55 Heart Street, Building No. 19, Apartment 8 - Cairo" data-name="Nourhan Tarek" data-location="Cairo" data-specialization="Endocrinology">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUOCy68eX9s0uDgVjudxWPYqcwsZHnHXghzw&s" alt="Doctor Image">
+    <h3>Dr. Nourhan Tarek</h3>
+    <p><strong>Specialization:</strong> Endocrinology</p>
+    <p><strong>Location:</strong> Cairo</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 116-789-0123</span></p>
+</div>
+
+<!-- Doctor Card 18 -->
+<div class="doctor-card" data-price="EP 200"  data-address="Sunshine Family Clinic, 44 Sunshine Street, Building No. 8, Apartment 7 - Alexandria" data-name="Bassem Raouf" data-location="Alexandria" data-specialization="Rheumatology">
+    <img src="https://fmed.stafpu.bu.edu.eg/CARDIOLOGY/6416/images/photo.png" alt="Doctor Image">
+    <h3>Dr. Bassem Raouf</h3>
+    <p><strong>Specialization:</strong> Rheumatology</p>
+    <p><strong>Location:</strong> Alexandria</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 117-890-1234<</span>/p>
+</div>
+
+<!-- Doctor Card 19 -->
+<div class="doctor-card" data-price="EP 500"  data-address="Pyramid Specialists Clinic, 66 Specialists Street, Building No. 12, Apartment 9 - Giza" data-name="Salma Gaber" data-location="Giza" data-specialization="Nephrology">
+    <img src="https://www.elitehospital.org/phys_Imgs/fcc26311-11c1-4eba-a927-ef259024f07f_2023-07-12.png" alt="Doctor Image">
+    <h3>Dr. Salma Gaber</h3>
+    <p><strong>Specialization:</strong> Nephrology</p>
+    <p><strong>Location:</strong> Giza</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 118-901-2345</span></p>
+</div>
+
+<!-- Doctor Card 20 -->
+<div class="doctor-card" data-price="EP 200"  data-address="Hope Medical Center, 33 Hope Street, Building No. 15, Apartment 5 - Ismailia" data-name="Mahmoud Adel" data-location="Ismailia" data-specialization="Hematology">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaw59kn36t07PhUB5Pyx0Z5hj2uPrHFVHOhQ&s" alt="Doctor Image">
+    <h3>Dr. Mahmoud Adel</h3>
+    <p><strong>Specialization:</strong> Hematology</p>
+    <p><strong>Location:</strong> Ismailia</p>
+    <p><strong>Phone:</strong> <span id="phone">+20 119-012-3456</span></p>
+</div>
+
+    
+            </div>
+        </section>
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>About Us</h2>
+								<p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Quick Links</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a></li>	
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consuling</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>	
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Open Hours</h2>
+								<p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p>
+								<ul class="time-sidual">
+									<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
+									<li class="day">Saturday <span>9.00-18.30</span></li>
+									<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Newsletter</h2>
+								<p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+									<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Your email address'" required="" type="email">
+									<button class="button"><i class="icofont icofont-paper-plane"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2018  |  All Rights Reserved by <a href="https://www.wpthemesgrid.com" target="_blank">wpthemesgrid.com</a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+		<!-- jquery Min JS -->
+        <script src="js/jquery.min.js"></script>
+		<!-- jquery Migrate JS -->
+		<script src="js/jquery-migrate-3.0.0.js"></script>
+		<!-- jquery Ui JS -->
+		<script src="js/jquery-ui.min.js"></script>
+		<!-- Easing JS -->
+        <script src="js/easing.js"></script>
+		<!-- Color JS -->
+		<script src="js/colors.js"></script>
+		<!-- Popper JS -->
+		<script src="js/popper.min.js"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!-- Jquery Nav JS -->
+        <script src="js/jquery.nav.js"></script>
+		<!-- Slicknav JS -->
+		<script src="js/slicknav.min.js"></script>
+		<!-- ScrollUp JS -->
+        <script src="js/jquery.scrollUp.min.js"></script>
+		<!-- Niceselect JS -->
+		<script src="js/niceselect.js"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="js/tilt.jquery.min.js"></script>
+		<!-- Owl Carousel JS -->
+        <script src="js/owl-carousel.js"></script>
+		<!-- counterup JS -->
+		<script src="js/jquery.counterup.min.js"></script>
+		<!-- Steller JS -->
+		<script src="js/steller.js"></script>
+		<!-- Wow JS -->
+		<script src="js/wow.min.js"></script>
+		<!-- Magnific Popup JS -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Google Map API Key JS -->
+		<script src="https://maps.google.com/maps/api/js?key=AIzaSyDGqTyqoPIvYxhn_Sa7ZrK5bENUWhpCo0w"></script>
+		<!-- Gmaps JS -->
+		<script src="js/gmaps.min.js"></script>
+		<!-- Map Active JS -->
+		<script src="js/map-active.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+        <script>
+            document.getElementById('search-btn').addEventListener('click', () => {
+                const nameFilter = document.getElementById('name-filter').value.toLowerCase();
+                const specializationFilter = document.getElementById('specialization-filter').value;
+                const locationFilter = document.getElementById('country-filter').value;
+    
+                const doctors = document.querySelectorAll('.doctor-card');
+    
+                doctors.forEach(doctor => {
+                    const name = doctor.getAttribute('data-name').toLowerCase();
+                    const location = doctor.getAttribute('data-location').toLowerCase();
+                    const specialization = doctor.getAttribute('data-specialization');
+    
+                    const matchesName = name.includes(nameFilter);
+                    const matchesLocation = locationFilter === "" || location === locationFilter;
+                    const matchesSpecialization = specializationFilter === "" || specialization === specializationFilter;
+    
+                    if (matchesName && matchesLocation && matchesSpecialization) {
+                        doctor.style.display = "block";
+                    } else {
+                        doctor.style.display = "none";
+                    }
+                });
+            });
+            
+                // استهداف جميع الكروت
+                const doctorCards = document.querySelectorAll('.doctor-card');
+              console.log(doctorCards)
+                // إضافة حدث النقر لكل كرت
+                doctorCards.forEach(card => {
+                  card.addEventListener('click', () => {
+                    // تخزين البيانات من الكرت
+                    const doctorData = {
+                      name: card.getAttribute('data-name'),
+                      location: card.getAttribute('data-location'),
+                      specialization: card.getAttribute('data-specialization'),
+                      address: card.getAttribute('data-address'),
+                      price: card.getAttribute('data-price'),
+                      image: card.querySelector('img').src,
+                      phone:card.querySelector('p span').textContent,
+                      
+                    };
+                    console.log(doctorData)
+                    
+                    // حفظ البيانات في localStorage
+                    localStorage.setItem('selectedDoctor', JSON.stringify(doctorData));
+              
+                    // الانتقال إلى صفحة الحجز
+                     window.location.href = 'booking-doctor.html'; 
+                   
+                  });
+                });
+              
+              
+        </script>
+    </body>
+</html>

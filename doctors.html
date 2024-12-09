@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Doctor</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #0077b6;
+            color: white;
+            padding: 20px;
+        }
+
+        .search-bar {
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .search-bar input,
+        .search-bar select,
+        .search-bar button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #0077b6;
+            color: white;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #005f87;
+        }
+
+        .doctors-section {
+            padding: 20px;
+        }
+
+        .doctors-section h2 {
+            text-align: center;
+            color: #0077b6;
+        }
+
+        .doctors-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .doctor-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .doctor-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .doctor-card h3 {
+            margin: 10px 0;
+            color: #0077b6;
+        }
+
+        .doctor-card p {
+            margin: 5px 0;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Find a Doctor</h1>
+        <p>Search and connect with the best healthcare professionals near you</p>
+    </header>
+
+    <!-- Search Bar -->
+    <section class="search-bar">
+        <form id="search-form">
+            <input type="text" id="name-filter" placeholder="Doctor's Name">
+           
+            <select id="specialization-filter">
+                <option value="">Select Specialization</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Dermatology">Dermatology</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Pediatrics">Pediatrics</option>
+            </select>
+
+            <!-- Location Dropdown -->
+            <select id="country-filter">
+                <option value="">Select Location</option>
+                <option value="Cairo">Cairo</option>
+                <option value="Giza">Giza</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="Ismailia">Ismailia</option>
+            </select>
+
+            <button type="button" id="search-btn">Search</button>
+        </form>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="doctors-section">
+        <h2>Available Doctors</h2>
+        <div class="doctors-container" id="doctors-container">
+            
+            <!-- Doctor Card 1 -->
+            <div class="doctor-card" data-name="Jane Doe" data-location="Cairo" data-specialization="Cardiology">
+                <img src="doctor1.jpg" alt="Doctor Image">
+                <h3>Dr. Jane Doe</h3>
+                <p><strong>Specialization:</strong> Cardiology</p>
+                <p><strong>Location:</strong> Cairo</p>
+                <p><strong>Phone:</strong> +1 555-123-4567</p>
+            </div>
+
+            <!-- Doctor Card 2 -->
+            <div class="doctor-card" data-name="John Smith" data-location="Giza" data-specialization="Dermatology">
+                <img src="doctor2.jpg" alt="Doctor Image">
+                <h3>Dr. John Smith</h3>
+                <p><strong>Specialization:</strong> Dermatology</p>
+                <p><strong>Location:</strong> Giza</p>
+                <p><strong>Phone:</strong> +1 555-987-6543</p>
+            </div>
+
+            <!-- Doctor Card 3 -->
+            <div class="doctor-card" data-name="Emily Clark" data-location="Alexandria" data-specialization="Pediatrics">
+                <img src="doctor3.jpg" alt="Doctor Image">
+                <h3>Dr. Emily Clark</h3>
+                <p><strong>Specialization:</strong> Pediatrics</p>
+                <p><strong>Location:</strong> Alexandria</p>
+                <p><strong>Phone:</strong> +1 555-654-3210</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Healthcare Services | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById('search-btn').addEventListener('click', () => {
+            const nameFilter = document.getElementById('name-filter').value.toLowerCase();
+            const specializationFilter = document.getElementById('specialization-filter').value;
+            const locationFilter = document.getElementById('country-filter').value;
+
+            const doctors = document.querySelectorAll('.doctor-card');
+
+            doctors.forEach(doctor => {
+                const name = doctor.getAttribute('data-name').toLowerCase();
+                const location = doctor.getAttribute('data-location').toLowerCase();
+                const specialization = doctor.getAttribute('data-specialization');
+
+                const matchesName = name.includes(nameFilter);
+                const matchesLocation = locationFilter === "" || location === locationFilter;
+                const matchesSpecialization = specializationFilter === "" || specialization === specializationFilter;
+
+                if (matchesName && matchesLocation && matchesSpecialization) {
+                    doctor.style.display = "block";
+                } else {
+                    doctor.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
